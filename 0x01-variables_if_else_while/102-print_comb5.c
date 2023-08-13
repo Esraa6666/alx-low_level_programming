@@ -17,11 +17,11 @@ int main(void)
 		{
 			if (seconDigit != firstDigit)
 			{
-				putchar((firstDigit / 10) + 48);
-				putchar((firstDigit % 10) + 48);
+				putchar((firstDigit / 10) + 0);
+				putchar((firstDigit % 10) + 0);
 				putchar(' ');
-				putchar((seconDigit / 10) + 48);
-				putchar((seconDigit % 10) + 48);
+				putchar((seconDigit / 10) + 0);
+				putchar((seconDigit % 10) + 0);
 
 				if (firstDigit != 98 || seconDigit != 99)
 				{
