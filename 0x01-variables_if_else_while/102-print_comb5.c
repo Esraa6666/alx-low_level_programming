@@ -9,7 +9,7 @@
 int main(void)
 {
 	int firstDigit = 0, seconDigit;
-	
+
 	while (seconDigit <= 99)
 	{
 		seconDigit = firstDigit;
