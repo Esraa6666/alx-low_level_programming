@@ -15,14 +15,14 @@ void more_numbers(void)
 	{
 		for (count = 0; count <= 14; count++)
 		{
+
 			num = count;
 			if (count > 0)
 			{
-				_putchar(1 + 48);
-				num = count % 10;
+			putchar(48 + num / 10)
 			}
-			_putchar(num + 48);
+			putchar(48 + num % 10);
+			putchar('\n');
 		}
-		_putchar('\n');
 	}
 }
