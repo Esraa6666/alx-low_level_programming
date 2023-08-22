@@ -5,7 +5,7 @@
  *
  * @str: string parameter input
  *
- * Return: void
+ * Return: voiid
  */
 
 void puts2(char *str)
@@ -18,3 +18,4 @@ void puts2(char *str)
 			_putchar(str[i]);
 	}
 	_putchar('\n');
+}
