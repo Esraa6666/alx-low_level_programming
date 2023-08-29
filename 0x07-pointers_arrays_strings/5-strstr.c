@@ -1,21 +1,35 @@
 #include "main.h"
 
 /**
- * print_chessboard - prints chessboard.
+ * _strstr - locates a substring.
+ * @haystack: the string to be searched.
+ * @needle: the substring to be locketed.
  *
- * @a: rows.
- * Return: nothing.
+ * Return: if the substring to be located - a pointer to the beginning
+ *
+ * if the substring is not located - NULL.
  */
-void print_chessboard(char (*a)[8])
-{
-	int i, j;
 
-	for (i = 0; i < 8; i++)
+char *_strstr(char *haystack, char *needle)
+{
+	int index;
+
+	if (*needle == 0)
+		return (haystack);
+	while (*haystack)
 	{
-		for (j = 0; j < 8; j++)
+		index = 0;
+
+		if (haystack[index] == needle[index])
 		{
-			_putchar(a[i][j]);
+			do {
+				if (needle[index + 1] == '\0')
+					return (haystack);
+
+				index++;
+			} while (haystack[index] == needle[index]);
 		}
-		_putchar('\n');
+		haystack++;
 	}
+	return ('\0');
 }
